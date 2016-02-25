@@ -10,9 +10,7 @@
         templateUrl: 'home/_home.html'
       });
 
-    $urlRouterProvider.otherwise( function($injector, $location) {
-      var $state = $injector.get("$state");
-      $state.go('home');
+    $urlRouterProvider.otherwise('home');
   });
 
 }());
